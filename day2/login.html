@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1> LOGIN </h1>
+    <style>
+        *{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+        }
+        h1{
+            text-align: center;
+        }
+        .box{
+                width : 400px;
+                padding: 20px;
+                margin: 50px auto;
+                border: 2px black;
+                border-radius: 10px;
+                background-color: lavender;
+                text-align: justify;
+                
+        }
+        form{
+            margin: 50px auto;
+            width: 400px;
+            
+        }
+        button{
+                width: 100%;          
+                padding: 15px;        
+                font-size: 18px;      
+                border-radius: 8px;
+                border: none;
+                background-color: rgb(236, 177, 230);
+                cursor: pointer;
+        }
+        body {
+            animation: bgChange 6s infinite alternate;
+        }
+
+        @keyframes bgChange {
+            0% { background-color: #f1d5d6; }
+            25% { background-color:  mistyrose; }
+            50% { background-color: lavenderblush; }
+            75% { background-color: ivory; }
+            100% { background-color: antiquewhite; }
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="box">
+            <form>
+                <label> Username: </label><br>
+                <input type = "text" id ="username"><br><br>
+                <label> Password: </label><br>
+                <input type = "password" id = "password"><br><br>
+                <button type = "submit"> submit </button>
+            </form>
+        </div>
+    </body>
+</html>
