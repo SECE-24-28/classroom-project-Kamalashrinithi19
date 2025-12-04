@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>London Gallery</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet">
+
+    <style>
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-slide { animation: fadeSlide 1s ease-out; }
+
+        @keyframes gentleZoom {
+            from { transform: scale(0.96); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .zoom-load { animation: gentleZoom 1s ease-out; }
+
+        .glow:hover {
+            transform: translateY(-5px) scale(1.03);
+            transition: 0.4s ease;
+            box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-light fade-slide">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fade-slide">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold float" href="#">London Gallery</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5 text-center fade-slide">
+        <h2 class="fw-bold mb-3 float">Beautiful Views of London</h2>
+        <p class="text-muted">Captured across the historic city</p>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row g-4">
+
+            <div class="col-md-4 zoom-load">
+                <div class="card shadow glow">
+                    <img src="https://images.unsplash.com/photo-1488747279002-c8523379faaa"
+                         class="card-img-top" alt="London Bridge">
+                    <div class="card-body">
+                        <h5 class="card-title">London Bridge</h5>
+                        <p class="card-text text-muted">Historic bridge over the Thames.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 zoom-load">
+                <div class="card shadow glow">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e"
+                         class="card-img-top" alt="Tower Bridge">
+                    <div class="card-body">
+                        <h5 class="card-title">Tower Bridge</h5>
+                        <p class="card-text text-muted">London’s iconic drawbridge.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 zoom-load">
+                <div class="card shadow glow">
+                    <img src="https://images.unsplash.com/photo-1488747279002-c8523379faaa"
+                         class="card-img-top" alt="River Thames">
+                    <div class="card-body">
+                        <h5 class="card-title">River Thames</h5>
+                        <p class="card-text text-muted">The river that flows through London.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5 fade-slide">
+        © 2025 London Gallery
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
